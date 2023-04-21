@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,500&display=swap');
+    </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" >Weather </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Top City
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" id="DelhiWeather">Delhi</a></li>
+              <li><a class="dropdown-item" href="#">Mumbai</a></li>
+              <li><a class="dropdown-item" href="#">Chennai</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a  class="nav-link active" aria-current="page" href="aboutas.html">About as</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchinput">
+          <button class="btn btn-outline-success" type="submit" id="searchbuttom">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="main">
+    <div class="city"><h1>Weather for <span id=cityname>Delhi<span></h1></div>
+   
+
+
+   
+  <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Humidty </h4>
+          </div>
+          <div class="card-body">
+             <h1><span id="humid1">0</span>%</h1> 
+            <ul class="list-unstyled mt-3 mb-4">
+              <h3><li>Humidity  : <span id="humid">0</span></li></h3>
+              <h3><li>Temp_max  : <span id="max_temp">0</span></li></h3>
+              <h3><li>Temp_min   : <span id="min_temp">0</span></li></h3>
+             
+            </ul>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Temperature</h4>
+          </div>
+          <div class="card-body">
+            <div id="temp">
+              <img src="thunderstorm.png" alt=" " id="tempicon">
+            </div>
+            <ul class="list-unstyled mt-3 mb-4">
+              <h3><li>Temp  : <span id="TempId">0</span></li></h3>
+              <h3><li>Feels_like   : <span id="feels">0</span></li></h3>
+              <h3><li>Wind  : <span id="wind"> 0</span></li></h3>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+ <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Wind Info</h4>
+          </div>
+          <div class="card-body">
+            <h1><span id="Speed">0</span>Km/Hr</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+               <h3><li>Sunrise   : <span id="sunr">0</span></li></h3>
+              <h3><li>Sunset   : <span id="suns">0</span></li></h3>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="foot">
+        Created By<span id="foot1"> Harish </span>
+           
+    </footer>
+	
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
